@@ -119,4 +119,5 @@ I will do my best to keep this project up-to-date, especially the security heade
 
 - [ ] Add favicon
 - [ ] Use Preact instead of React
+- [ ] Add a preset for cookies
 - [x] Create documentation
