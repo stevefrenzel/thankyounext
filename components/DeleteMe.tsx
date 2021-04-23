@@ -105,7 +105,7 @@ export default function DeleteMe() {
               <a href="#performance">Perfomance 🏃‍♀️</a>
             </li>
             <li>
-              <a href="#accessibility">A11y 👤</a>
+              <a href="#accessibility">Accessibility (A11y) 🌍</a>
             </li>
             <li>
               <a href="#security">Security 🔒</a>
@@ -114,7 +114,7 @@ export default function DeleteMe() {
               <a href="#styling">Styling 💅</a>
             </li>
             <li>
-              <a href="#seo">SEO 🔍</a>
+              <a href="#seo">Search engine optimization (SEO) 🔍</a>
             </li>
             <li>
               <a href="#behalf">On my own behalf 🙇‍♂️</a>
@@ -180,11 +180,9 @@ export default function DeleteMe() {
         {/* ACCESSIBILITY */}
         <section className="stack">
           <div className="section-header">
-            <h2 id="accessibility">
-              3. <abbr title="Accessibility">A11y</abbr>
-            </h2>
+            <h2 id="accessibility">Accessibility (A11y)</h2>
             <a href="#accessibility" aria-label="Link to Accessibility">
-              👤
+              🌍
             </a>
           </div>
           <p>
@@ -353,9 +351,7 @@ export default function DeleteMe() {
         {/* SEO */}
         <section className="stack">
           <div className="section-header">
-            <h2 id="seo">
-              6. <abbr title="Search Engine Optimization">SEO</abbr>
-            </h2>
+            <h2 id="seo">6. Search engine optimization (SEO)</h2>
             <a href="#seo" aria-label="Link to SEO">
               🔍
             </a>
@@ -419,7 +415,7 @@ export default function DeleteMe() {
         </section>
         {/* FOOTER */}
         <footer>
-          <span>© 2021 Steve Frenzel</span>
+          <p>© 2021 Steve Frenzel</p>
         </footer>
       </main>
     </div>
