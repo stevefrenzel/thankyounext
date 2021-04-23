@@ -1,0 +1,28 @@
+// Skip link
+
+[href='#main'] {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  margin: 1rem;
+  padding: 1%;
+  &:active,
+  &:focus {
+    background: blue;
+    color: #fff;
+    right: auto;
+  }
+}
+
+// External link
+
+.external-link::after {
+  content: '';
+  display: inline-block;
+  background-image: url('/external-link.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75% auto;
+  width: 24px;
+  height: 24px;
+}
