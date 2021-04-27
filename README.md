@@ -39,7 +39,22 @@ If you don't feel comfortable using **TypeScript** or simply don't need it, just
 
 ### 1.2 Preact
 
-I'm planning to switch out **React** with [Preact](https://preactjs.com/) to make this template even lighter and leaner.
+This template runs with [Preact](https://preactjs.com/) instead of **React**, which results in a smaller build and the same developer experience. [More info about the differences to React](https://preactjs.com/guide/v8/differences-to-react/). Want to switch back to **React**? Easy as cake, just delete or comment out the following in `next.config.js`:
+
+```javascript
+webpack: (config, { dev, isServer }) => {
+    if (!dev && !isServer) {
+      Object.assign(config.resolve.alias, {
+        react: 'preact/compat',
+        'react-dom/test-utils': 'preact/test-utils',
+        'react-dom': 'preact/compat',
+      });
+    }
+    return config;
+  },
+```
+
+If you want to clean up your project, run `npm uninstall preact preact-compat` to uninstall it.
 
 ## 2. Performance 🏃‍♀️
 
@@ -117,7 +132,7 @@ I will do my best to keep this project up-to-date, especially the security heade
 
 ## To Do
 
-- [ ] Add favicon
-- [ ] Use Preact instead of React
+- [ ] Add favicon with background color
 - [ ] Add a preset for cookies
+- [x] Use Preact instead of React
 - [x] Create documentation
