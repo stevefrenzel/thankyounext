@@ -30,7 +30,7 @@ body {
   }
 
   hr {
-    margin-top: 1.5rem;
+    margin: 3rem auto;
     width: 25%;
     border: 1px solid var(--font-color);
     -moz-transform: rotate(-1deg);
@@ -46,7 +46,7 @@ body {
 
   section,
   main {
-    max-width: 75rem;
+    max-width: 70rem;
     margin: 0 auto;
   }
 
