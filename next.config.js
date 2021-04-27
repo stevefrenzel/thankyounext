@@ -52,4 +52,16 @@ module.exports = {
     locales: ['en'],
     defaultLocale: 'en',
   },
+  // This will replace React with Preact only in client production build
+  // Delete or comment out if you're experiencing any issues with Preact
+  webpack: (config, { dev, isServer }) => {
+    if (!dev && !isServer) {
+      Object.assign(config.resolve.alias, {
+        react: 'preact/compat',
+        'react-dom/test-utils': 'preact/test-utils',
+        'react-dom': 'preact/compat',
+      });
+    }
+    return config;
+  },
 };
