@@ -145,9 +145,25 @@ export default function DeleteMe() {
           </p>
           <h3>1.2 Preact</h3>
           <p>
-            I'm planning to switch out React with{' '}
-            <ExtLink url="https://preactjs.com/" content="Preact" /> to make this template even
-            lighter and leaner.
+            This template runs with <ExtLink url="https://preactjs.com/" content="Preact" /> instead
+            of <strong>React</strong>, which results in a smaller build and the same developer
+            experience.{' '}
+            <ExtLink
+              url="https://preactjs.com/guide/v8/differences-to-react/"
+              content="More info about the differences to React."
+            />
+            Want to switch back to <strong>React</strong>? Easy as cake, just delete or comment out
+            the following in <code>next.config.js</code>:
+          </p>
+          <img
+            src="/code-2-min.png"
+            alt="Code in next.config.js for Preact"
+            width="1178"
+            height="744"
+          />
+          <p>
+            If you want to clean up your project, run{' '}
+            <code>npm uninstall preact preact-compat</code> to uninstall it.
           </p>
         </section>
         <hr />
@@ -169,7 +185,12 @@ export default function DeleteMe() {
             This template also ships with zero byte of client-side JavaScript, thanks to the
             following lines of code:
           </p>
-          <img src="/code-1.png" alt="Code snippet" width="1544" height="968" />
+          <img
+            src="/code-1-min.png"
+            alt="Code showing how to deactivate run time JavaScript in Next.js"
+            width="1544"
+            height="968"
+          />
           <p>
             If you want to use things like <strong>next/image</strong> or{' '}
             <strong>React hooks</strong> though, you will have to remove it, otherwise they will not
