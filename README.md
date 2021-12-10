@@ -9,6 +9,7 @@
 - [ ] Add & style external link component
 - [ ] Disable runtime JavaScript
 - [ ] Add dark mode
+- [ ] Add husky for pre-commit and pre-push
 
 ## Features
 
