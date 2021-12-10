@@ -1,14 +1,18 @@
 import type { NextPage } from 'next'
 
 interface Props {
+  text: string
   url: string
-  content: string
 }
 
-const ExternalLink: NextPage<Props> = ({ url, content }) => {
+const ExternalLink: NextPage<Props> = ({ url, text }) => {
   return (
-    <a href={url} rel="noopener noreferrer">
-      {content}
+    <a
+      href={url}
+      rel="noopener noreferrer"
+      className="underline after:content-['_↗']"
+    >
+      {text}
     </a>
   )
 }
