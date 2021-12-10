@@ -48,9 +48,30 @@ const Meta: NextPage<Props> = ({
   twitterCard,
   twitterName,
 }) => {
+  Meta.defaultProps = {
+    title: 'ThankYouNext',
+    keywords: 'web development, programming, next.js',
+    description:
+      'Next.js starter template featuring TypeScript, Sass, ESLint & Prettier configuration and much more!',
+    imageSource: 'https://thankyounext.vercel.app/seo.png',
+    imageType: 'image/png',
+    imageAltText:
+      'ThankYouNext - A highly performant and accessible Next.js starter template',
+    imageWidth: '1600',
+    imageHeight: '882',
+    type: 'website',
+    websiteUrl: 'https://thankyounext.vercel.app/',
+    siteName: 'Next.js Starter',
+    twitterCard: 'summary_large_image',
+    twitterName: '@stvfrnzl',
+  }
+
   return (
     <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+      ></meta>
       <meta charSet="utf-8"></meta>
       <meta name="robots" content="follow, index" />
       <meta name="keywords" content={keywords}></meta>
