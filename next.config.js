@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const withPreact = require('next-plugin-preact')
 
 const securityHeaders = [
   {
@@ -32,7 +33,7 @@ const securityHeaders = [
   // Add Content-Security-Policy
 ]
 
-module.exports = {
+module.exports = withPreact({
   reactStrictMode: true,
   async headers() {
     return [
@@ -42,4 +43,4 @@ module.exports = {
       },
     ]
   },
-}
+})
