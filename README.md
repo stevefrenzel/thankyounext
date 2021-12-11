@@ -1,6 +1,6 @@
 # To do
 
-- [ ] Create meta component
+- [x] Create meta component
 - [x] Add Tailwind CSS
 - [x] Add security headers
 - [x] Add absolute imports
