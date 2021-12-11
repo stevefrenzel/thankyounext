@@ -1,14 +1,14 @@
 # To do
 
 - [x] Create meta component
+- [ ] Fix TypeScript error of meta component
 - [x] Add Tailwind CSS
 - [x] Add security headers
 - [x] Add absolute imports
-- [ ] Add Preact
-- [ ] Add & style skip link
-- [ ] Add & style external link component
-- [ ] Disable runtime JavaScript
-- [ ] Add dark mode
+- [x] Add Preact
+- [x] Add & style skip link
+- [x] Add & style external link component
+- [x] Disable runtime JavaScript
 - [ ] Add husky for pre-commit and pre-push
 
 ## Features
