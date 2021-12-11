@@ -4,12 +4,18 @@ import SkipLink from 'components/SkipLink'
 import ExternalLink from 'components/ExternalLink'
 import Footer from 'components/Footer'
 
+// Delete this if runtime JavaScript is needed:
+export const config = {
+  unstable_runtimeJS: false,
+}
+
 const Home: NextPage = () => {
   return (
     <div className="font-sans px-4 sm:px-6 pb-4 sm:pb-6 flex flex-col bg-gradient-to-b from-white to-rose-300 h-screen overflow-auto">
+      <SkipLink content="Skip to main content" />
       <div className="max-w-3xl mx-auto">
+        {/* TODO: Fix this TypeScript error */}
         <Meta />
-        {/* <SkipLink content="Skip to main content" /> */}
         <h1 className="text-5xl sm:text-6xl font-bold my-8 sm:my-12">
           Thank&shy;You&shy;Next 🖤
         </h1>
@@ -69,7 +75,19 @@ const Home: NextPage = () => {
           </p>
           <p className="mb-6">Click here to use the template right away:</p>
           <a
-            className="bg-green-500 text-white p-3 rounded-md animate-bounce text-2xl drop-shadow-lg"
+            className="
+              bg-green-500
+              text-white
+              p-3
+              rounded-md
+              animate-bounce
+              text-2xl
+              drop-shadow-lg
+              motion-safe:animate-pulse
+              hover:animate-none
+              focus:animate-none
+              active:animate-none
+              "
             href="https://github.com/stevefrenzel/thankyounext/generate"
             rel="noopener noreferrer"
           >
