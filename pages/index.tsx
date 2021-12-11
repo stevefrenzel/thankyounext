@@ -6,9 +6,9 @@ import Footer from 'components/Footer'
 
 const Home: NextPage = () => {
   return (
-    <div className="font-sans px-4 sm:px-6 pb-4 sm:pb-6 flex flex-col bg-gradient-to-b from-white to-rose-100 h-screen overflow-auto">
+    <div className="font-sans px-4 sm:px-6 pb-4 sm:pb-6 flex flex-col bg-gradient-to-b from-white to-rose-300 h-screen overflow-auto">
       <div className="max-w-3xl mx-auto">
-        {/* <Meta /> */}
+        <Meta />
         {/* <SkipLink content="Skip to main content" /> */}
         <h1 className="text-5xl sm:text-6xl font-bold my-8 sm:my-12">
           Thank&shy;You&shy;Next 🖤
@@ -69,7 +69,7 @@ const Home: NextPage = () => {
           </p>
           <p className="mb-6">Click here to use the template right away:</p>
           <a
-            className="bg-green-500 text-white p-3 rounded-md animate-bounce text-2xl"
+            className="bg-green-500 text-white p-3 rounded-md animate-bounce text-2xl drop-shadow-lg"
             href="https://github.com/stevefrenzel/thankyounext/generate"
             rel="noopener noreferrer"
           >
