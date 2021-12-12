@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import Meta from 'components/Meta'
 import SkipLink from 'components/SkipLink'
 import ExternalLink from 'components/ExternalLink'
-import Footer from 'components/Footer'
 
 // Delete this if runtime JavaScript is needed:
 export const config = {
@@ -95,7 +94,6 @@ const Home: NextPage = () => {
           </a>
         </main>
       </div>
-      {/* <Footer /> */}
     </div>
   )
 }
