@@ -2,9 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 
 interface Props {
-  title: string
+  title?: string
   keywords?: string
-  description: string
+  description?: string
   websiteUrl?: string
   type?: string
   siteName?: string
@@ -34,6 +34,7 @@ const Meta: NextPage<Props> = ({
 }) => {
   return (
     <Head>
+      {/* General */}
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1"
