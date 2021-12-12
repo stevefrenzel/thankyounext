@@ -10,12 +10,24 @@ export const config = {
 
 const Home: NextPage = () => {
   return (
-    <div className="font-sans px-4 sm:px-6 pb-4 sm:pb-6 flex flex-col bg-gradient-to-b from-white to-rose-300 h-screen overflow-auto">
+    <div
+      className="
+      font-sans
+      p-4
+      sm:p-12
+      flex
+      flex-col
+      bg-gradient-to-b
+      from-white
+      to-rose-300
+      h-screen
+      overflow-auto"
+    >
       <SkipLink content="Skip to main content" />
       <div className="max-w-3xl mx-auto">
         {/* TODO: Fix this TypeScript error */}
         <Meta />
-        <h1 className="text-5xl sm:text-6xl font-bold my-8 sm:my-12">
+        <h1 className="text-5xl sm:text-6xl font-bold mb-8 sm:mb-12">
           Thank&shy;You&shy;Next 🖤
         </h1>
         <p className="text-3xl sm:text-4xl mb-6 leading-normal font-semibold">
@@ -75,6 +87,7 @@ const Home: NextPage = () => {
           <p className="mb-6">Click here to use the template right away:</p>
           <a
             className="
+              after:content-['_↗']
               bg-green-500
               text-white
               p-3
