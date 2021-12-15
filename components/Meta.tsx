@@ -71,7 +71,7 @@ const Meta: NextPage<Props> = ({
 export default Meta
 
 Meta.defaultProps = {
-  title: 'ThankYouNext',
+  title: 'ThankYouNext 🖤 (Version 2.0)',
   keywords: 'web development, programming, next.js',
   description:
     'Next.js starter template featuring TypeScript, Tailwind CSS, Preact and much more!',
