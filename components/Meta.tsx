@@ -1,40 +1,23 @@
-import React, { ReactElement } from 'react';
-import Head from 'next/head';
+import type { NextPage } from 'next'
+import Head from 'next/head'
 
 interface Props {
-  title: string;
-  keywords?: string;
-  description: string;
-  websiteUrl?: string;
-  type?: string;
-  siteName?: string;
-  imageSource?: string;
-  imageType?: string;
-  imageAltText?: string;
-  imageWidth?: string;
-  imageHeight?: string;
-  twitterCard?: string;
-  twitterName?: string;
+  title?: string
+  keywords?: string
+  description?: string
+  websiteUrl?: string
+  type?: string
+  siteName?: string
+  imageSource?: string
+  imageType?: string
+  imageAltText?: string
+  imageWidth?: string
+  imageHeight?: string
+  twitterCard?: string
+  twitterName?: string
 }
 
-Meta.defaultProps = {
-  title: 'ThankYouNext',
-  keywords: 'web development, programming, next.js',
-  description:
-    'Next.js starter template featuring TypeScript, Sass, ESLint & Prettier configuration and much more!',
-  imageSource: 'https://thankyounext.vercel.app/seo.png',
-  imageType: 'image/png',
-  imageAltText: 'ThankYouNext - A highly performant and accessible Next.js starter template',
-  imageWidth: '1600',
-  imageHeight: '882',
-  type: 'website',
-  websiteUrl: 'https://thankyounext.vercel.app/',
-  siteName: 'Next.js Starter',
-  twitterCard: 'summary_large_image',
-  twitterName: '@stvfrnzl',
-};
-
-export default function Meta({
+const Meta: NextPage<Props> = ({
   title,
   keywords,
   description,
@@ -48,10 +31,14 @@ export default function Meta({
   imageHeight,
   twitterCard,
   twitterName,
-}: Props): ReactElement {
+}) => {
   return (
     <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+      {/* General */}
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+      ></meta>
       <meta charSet="utf-8"></meta>
       <meta name="robots" content="follow, index" />
       <meta name="keywords" content={keywords}></meta>
@@ -78,5 +65,25 @@ export default function Meta({
       <meta name="twitter:image" content={imageSource} />
       <meta name="twitter:image:alt" content={imageAltText} />
     </Head>
-  );
+  )
+}
+
+export default Meta
+
+Meta.defaultProps = {
+  title: 'ThankYouNext 🖤 (Version 2.0)',
+  keywords: 'web development, programming, next.js',
+  description:
+    'Next.js starter template featuring TypeScript, Tailwind CSS, Preact and much more!',
+  imageSource: 'https://thankyounext.vercel.app/seo.png',
+  imageType: 'image/png',
+  imageAltText:
+    'ThankYouNext - A highly performant and accessible Next.js starter template',
+  imageWidth: '1600',
+  imageHeight: '882',
+  type: 'website',
+  websiteUrl: 'https://thankyounext.vercel.app/',
+  siteName: 'Next.js Starter',
+  twitterCard: 'summary_large_image',
+  twitterName: '@stvfrnzl',
 }
