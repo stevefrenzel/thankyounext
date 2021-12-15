@@ -15,10 +15,11 @@ This Next.js starter template is meant to be _easy to use_, _fun to work with_ a
 
 ## Table of contents
 
-- General
-- Performance
-- Security
-- SEO
+- [General](#1.-General)
+- [Styling](#2.-Styling)
+- [Performance](#3.-Performance)
+- [Security](#4.-Security)
+- [SEO](#5.-SEO)
 
 ## 1. General
 
