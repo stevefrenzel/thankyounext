@@ -28,12 +28,16 @@ const securityHeaders = [
   },
   {
     key: 'Referrer-Policy',
-    value: 'origin-when-cross-origin',
+    value: 'strict-origin-when-cross-origin',
   },
-  // Add Content-Security-Policy
+  // Add Content-Security-Policy header here!
 ]
 
 module.exports = withPreact({
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
+  },
   reactStrictMode: true,
   async headers() {
     return [
