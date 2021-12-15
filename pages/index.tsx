@@ -44,9 +44,12 @@ const Home: NextPage = () => {
               text="Create Next App"
               url="https://nextjs.org/docs/api-reference/create-next-app"
             />{' '}
-            and has the following features:
+            and has the following features, among others:
           </p>
           <ul className="list-disc list-inside leading-normal mb-6" role="list">
+            <li>
+              <ExternalLink text="Preact" url="https://preactjs.com/" />
+            </li>
             <li>
               <ExternalLink
                 text="TypeScript"
@@ -58,9 +61,6 @@ const Home: NextPage = () => {
                 text="Tailwind CSS"
                 url="https://tailwindcss.com/"
               />
-            </li>
-            <li>
-              <ExternalLink text="Preact" url="https://preactjs.com/" />
             </li>
             <li>
               <ExternalLink
