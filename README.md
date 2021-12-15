@@ -1,6 +1,6 @@
 # ThankYouNext 🖤 (Version 2.0)
 
-This Next.js starter template is meant to be _easy to use_, _fun to work with_ and _very performant_. It was bootstrapped with [create-next-app](https://nextjs.org/docs#setup) and has the following features:
+This Next.js starter template is meant to be _easy to use_, _fun to work with_ and _very performant_. It was bootstrapped with [create-next-app](https://nextjs.org/docs#setup) and has the following features, among others:
 
 - [Next.js 12](https://nextjs.org/)
 - [Preact](https://preactjs.com/)
