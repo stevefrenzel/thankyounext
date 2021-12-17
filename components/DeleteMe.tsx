@@ -69,7 +69,6 @@ const DeleteMe: NextPage = () => {
                 url="https://prettier.io/docs/en/configuration.html"
               />
             </li>
-            <li>Dark mode</li>
           </ul>
           <p className="mb-6">
             You can find the GitHub repository here:{' '}
